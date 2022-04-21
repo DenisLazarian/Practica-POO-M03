@@ -42,4 +42,14 @@ public class Modul {
 	public void setArrUFs(UF[] arrUFs) {
 		this.arrUFs = arrUFs;
 	}
+	
+	@Override
+	public String toString() {
+		
+		
+		
+		
+		
+		return "Modul " + nomModul + ", Durada = " + horesTotals+ " hores." ;
+	}
 }
