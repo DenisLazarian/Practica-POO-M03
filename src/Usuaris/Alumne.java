@@ -28,4 +28,14 @@ public class Alumne extends Persona{
 		
 		
 	}
+	
+	@Override
+	public String toString() {
+		String cadena="\n";
+		for (int i = 0; i<numUFs;i++)
+			cadena+=arrUFsMatriculades[i].toString()+"\n";
+		
+		
+		return "Alumne " +" "+ cognom +" s'ha matriculat de: "+cadena;
+	}
 }
