@@ -46,10 +46,16 @@ public class Modul {
 	@Override
 	public String toString() {
 		
+		String cadena="";
+		int i=0;
+		while (  i<arrUFs.length && arrUFs[i] !=null) {
+			
+			cadena +="\n"+arrUFs[i]; 
+			i++;
+		}
 		
 		
 		
-		
-		return "Modul " + nomModul + ", Durada = " + horesTotals+ " hores." ;
+		return "Modul " + nomModul + ", Durada = " + horesTotals+ " hores."+cadena ;
 	}
 }
