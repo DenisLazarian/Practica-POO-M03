@@ -25,5 +25,16 @@ public class Docent extends Persona {
 		numModuls++;
 		
 	}
+	
+	@Override
+	public String toString() {
+		
+		String cadena= "\n";
+		for(int i =0; i < numModuls; i++)
+			cadena+= modulsImpartits[i].getNomModul()+"\n";
+		
+		
+		return "Docent "+nom+" "+cognom+" imparteix: "+ cadena;
+	}
 
 }
